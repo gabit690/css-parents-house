@@ -12,6 +12,12 @@ ___
 
 ___
 
+## **Proyecto.**
+
+Podés ver el trabajo terminado [acá][web].
+
+___
+
 ## **Autor.**
 
 **Apodo:** Gabit.
@@ -21,3 +27,5 @@ ___
 **Inicio del proyecto:** 02/07/2020.
 
 **Finalización del proyecto:** ??/07/2020.
+
+[web]: blah

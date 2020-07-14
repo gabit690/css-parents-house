@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -10,7 +14,6 @@ body {
 #contenido {
     width: 300px;
     height: 600px;
-    background-color: aqua;
 }
 
 .contenedor {
@@ -21,54 +24,108 @@ body {
     position: absolute;
 }
 
+.techo {
+    width: 300px;
+    height: 10px;
+    background-color: lightgrey;
+}
+
 .piso {
     width: 300px;
-    height: 200px;
+    height: 190px;
 }
 
 .ventana {
-    width: 100px;
-    height: 70px;
+    position: absolute;
     border: 5px solid black;
     background-color: blanchedalmond;
 }
 
 .ladrillo {
-    display: inline-block;
-    width: 60px;
-    height: 35.5px;
+    border: 2px solid lightgrey;
+    float: left;
+}
+
+.ladrillo-costado {
+    width: 30px;
+    height: 38px;
+    background-color: #bf7041;
     background-image: linear-gradient(180deg, 
-    #d58852 2.5px,
-    #bf7041 2.5px,
-    #bf7041 5px,
-    #d58852 5px,
-    #d58852 7.5px,
-    #bf7041 7.5px,
-    #bf7041 10px,
-    #d58852 10px,
-    #d58852 12.5px,
-    #bf7041 12.5px,
-    #bf7041 15.25px,
-    #d58852 15.25px);
-    background-size: 60px 17.75px;
-    border: 2.25px solid silver;
+        #d58852 4px, 
+        transparent 4px, 
+        transparent 15px,
+        #d58852 15px,
+        #d58852 19px,
+        transparent 19px,
+        transparent 30px, 
+        #d58852 30px), 
+    linear-gradient(90deg, 
+        #d58852 4px, 
+        transparent 4px, 
+        transparent 11px,
+        #d58852 11px,
+        #d58852 15px,
+        transparent 15px,
+        transparent 22px, 
+        #d58852 22px);
+    background-size: 30px 38px;
+    background-repeat: no-repeat;
+}
+
+.ladrillo-frente {
+    width: 60px;
+    height: 38px;
+    background-color: #d58852;
+    background-image: linear-gradient(180deg, 
+        #d58852 5px, 
+        #bf7041 5px,
+        #bf7041 7px, 
+        #d58852 7px,
+        #d58852 10px,
+        #bf7041 10px, 
+        #bf7041 12px,
+        #d58852 12px);
+    background-size: 60px 19px;
 }
 
 #planta-baja {
     background-color: blue;
 }
 
+#ventana-planta-baja {
+    width: 100px;
+    height: 70px;
+    top: 50px;
+    left: 150px;
+}
+
 #puerta {
-    width: 50px;
+    width: 75px;
     height: 100px;
+    bottom: 0;
+    left: 50px;
     border: 5px solid black;
     background-color: blanchedalmond;
 }
 
 #planta-media {
-    background-color: red;
+
+}
+
+#ventana-planta-media {
+    width: 180px;
+    height: 100px;
+    top: 40px;
+    left: 60px;
 }
 
 #planta-alta {
-    background-color: green;
+
+}
+
+#ventana-planta-alta {
+    width: 100px;
+    height: 70px;
+    top: 50px;
+    left: 100px;
 }

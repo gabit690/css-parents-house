@@ -9,11 +9,13 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    background-color: #6a197d;
 }
 
 #contenido {
     width: 300px;
     height: 600px;
+    background-color: lightgrey;
 }
 
 .contenedor {
@@ -37,8 +39,28 @@ body {
 
 .ventana {
     position: absolute;
-    border: 5px solid black;
-    background-color: blanchedalmond;
+    border: 3px solid black;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hoja {
+    width: 30%;
+    height: 80%;
+    background-color: lightsteelblue;
+    border: 3px solid black;
+    float: left;
+}
+
+.separacion-ventana {
+    position: absolute;
+    top: 0;
+    left: 49%;
+    width: 3px;
+    height: 100%;
+    background-color: black;
 }
 
 .ladrillo {
@@ -89,23 +111,41 @@ body {
 }
 
 #planta-baja {
-    background-color: blue;
+    background-color: mediumaquamarine;
 }
 
 #ventana-planta-baja {
-    width: 100px;
-    height: 70px;
+    width: 130px;
+    height: 80px;
     top: 50px;
     left: 150px;
 }
 
+#ventana-planta-baja .hoja {
+    background-color:white;
+    background-image: linear-gradient(90deg, rgba(200,0,0,.5) 50%, transparent 50%),
+    linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%);
+    background-size: 3px 3px;
+}
+
 #puerta {
-    width: 75px;
-    height: 100px;
+    width: 80px;
+    height: 150px;
     bottom: 0;
-    left: 50px;
-    border: 5px solid black;
-    background-color: blanchedalmond;
+    left: 35px;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    background-color: midnightblue;
+}
+
+#manija {
+    width: 10px;
+    height: 40px;
+    background: linear-gradient(90deg, black 0.25px, silver, black 9.75px);
+    border-radius: 30%;
+    top: 60px;
+    left: 60px;
 }
 
 #planta-media {
@@ -119,13 +159,42 @@ body {
     left: 60px;
 }
 
+#rollo-cortina {
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(burlywood 7px, darkgoldenrod 7px, darkgoldenrod 10px);
+    background-size: 30px 10px;
+    background-color: burlywood;
+    border-bottom: 3px solid darkgoldenrod;
+    z-index: 1;
+    transition: 0.25s height ease;
+}
+
+#rollo-cortina:hover {
+    height: 100%;
+}
+
+
 #planta-alta {
 
 }
 
 #ventana-planta-alta {
-    width: 100px;
-    height: 70px;
+    width: 160px;
+    height: 90px;
     top: 50px;
-    left: 100px;
+    left: 70px;
+}
+
+#ventana-planta-alta .hoja {
+    background-image: url(flowers.jpg);
+    background-size: 70px 70px;
+}
+
+#piso {
+    width: 340px;
+    height: 20px;
+    background-color: dimgrey;
 }

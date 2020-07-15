@@ -9,13 +9,12 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: #6a197d;
+    background-color: #4e065e;
 }
 
 #contenido {
     width: 300px;
-    height: 600px;
-    background-color: lightgrey;
+    height: 500px;
 }
 
 .contenedor {
@@ -28,18 +27,18 @@ body {
 
 .techo {
     width: 300px;
-    height: 10px;
+    height: 6.68px;
     background-color: lightgrey;
 }
 
 .piso {
     width: 300px;
-    height: 190px;
+    height: 160px;
 }
 
 .ventana {
     position: absolute;
-    border: 3px solid black;
+    border: 2px solid black;
     background-color: whitesmoke;
     display: flex;
     justify-content: space-around;
@@ -50,116 +49,200 @@ body {
     width: 30%;
     height: 80%;
     background-color: lightsteelblue;
-    border: 3px solid black;
+    border: 2px solid black;
     float: left;
 }
 
 .separacion-ventana {
     position: absolute;
     top: 0;
-    left: 49%;
-    width: 3px;
+    left: 49.5%;
+    width: 2px;
     height: 100%;
     background-color: black;
 }
 
 .ladrillo {
-    border: 2px solid lightgrey;
+    border: 1px solid lightgrey;
     float: left;
 }
 
 .ladrillo-costado {
     width: 30px;
-    height: 38px;
+    height: 32px;
     background-color: #bf7041;
     background-image: linear-gradient(180deg, 
         #d58852 4px, 
         transparent 4px, 
-        transparent 15px,
-        #d58852 15px,
-        #d58852 19px,
-        transparent 19px,
-        transparent 30px, 
-        #d58852 30px), 
+        transparent 13px,
+        #d58852 13px,
+        #d58852 17px,
+        transparent 17px,
+        transparent 26px, 
+        #d58852 26px), 
     linear-gradient(90deg, 
         #d58852 4px, 
         transparent 4px, 
-        transparent 11px,
-        #d58852 11px,
-        #d58852 15px,
-        transparent 15px,
-        transparent 22px, 
-        #d58852 22px);
+        transparent 12px,
+        #d58852 12px,
+        #d58852 16px,
+        transparent 16px,
+        transparent 24px, 
+        #d58852 24px);
     background-size: 30px 38px;
     background-repeat: no-repeat;
 }
 
 .ladrillo-frente {
     width: 60px;
-    height: 38px;
+    height: 32px;
     background-color: #d58852;
     background-image: linear-gradient(180deg, 
-        #d58852 5px, 
-        #bf7041 5px,
-        #bf7041 7px, 
-        #d58852 7px,
-        #d58852 10px,
-        #bf7041 10px, 
-        #bf7041 12px,
-        #d58852 12px);
-    background-size: 60px 19px;
+        #d58852 4px, 
+        #bf7041 4px,
+        #bf7041 6px, 
+        #d58852 6px,
+        #d58852 8px,
+        #bf7041 8px, 
+        #bf7041 10px,
+        #d58852 10px);
+    background-size: 60px 16px;
 }
+
+/* PLANTA BAJA */
 
 #planta-baja {
-    background-color: mediumaquamarine;
+    background-color: rgb(136, 221, 194);
 }
 
-#ventana-planta-baja {
+#planta-baja #porta-lampara {
+    width: 11px;
+    height: 10px;
+    top: 0px;
+    left: 129px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color:peachpuff;
+}
+
+#planta-baja #lampara {
+    width: 9px;
+    height: 10px;
+    top: 10px;
+    left: 130px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px 5px whitesmoke;
+}
+
+#planta-baja #reja-ventana {
+    width: 142px;
+    height: 100px;
+    top: 25px;
+    left: 144px;
+    background-image: linear-gradient(transparent 13px,brown 13px,brown 17px, transparent 17px), 
+    linear-gradient(90deg, transparent 20px, brown 20px,brown 23px, transparent 23px,transparent 43px, brown 43px,brown 46px, transparent 46px,transparent 66px, brown 66px);
+    background-size: 10px 31px, 72px 20px;
+
+    border: 4px solid brown;
+    z-index: 1;
+}
+
+#planta-baja #ventana-planta-baja {
     width: 130px;
     height: 80px;
-    top: 50px;
+    top: 35px;
     left: 150px;
 }
 
-#ventana-planta-baja .hoja {
+#planta-baja #ventana-planta-baja .hoja {
     background-color:white;
     background-image: linear-gradient(90deg, rgba(200,0,0,.5) 50%, transparent 50%),
     linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%);
     background-size: 3px 3px;
 }
 
-#puerta {
-    width: 80px;
-    height: 150px;
+#planta-baja #puerta {
+    width: 90px;
+    height: 140px;
     bottom: 0;
-    left: 35px;
-    border-top: 3px solid black;
-    border-left: 3px solid black;
-    border-right: 3px solid black;
+    left: 30px;
+    border: 2px solid black;
     background-color: midnightblue;
 }
 
-#manija {
+#puerta #marco {
+    width: 72px;
+    height: 130px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    top: 7px;
+    left: 7px;
+}
+
+#puerta #puerta-detalle {
+    width: 61px;
+    height: 124px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    background-image: linear-gradient( rgb(0, 0, 88) 2px, transparent 2px, transparent 4px, rgb(0, 0, 88) 4px, rgb(0, 0, 88) 6px, transparent 6px);
+    background-size: 30px 22px;
+    background-position: 0px 100px;
+    top: 13px;
+    left: 13px;
+}
+
+#puerta #mirilla {
+    width: 12px;
+    height: 12px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: silver;
+    top: 35px;
+    left: 40px;
+}
+
+#mirilla #visor {
+    width: 6px;
+    height: 6px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: lightsteelblue;
+    top: 1px;
+    left: 1px;
+}
+
+#puerta #picaporte {
     width: 10px;
-    height: 40px;
+    height: 30px;
     background: linear-gradient(90deg, black 0.25px, silver, black 9.75px);
     border-radius: 30%;
     top: 60px;
-    left: 60px;
+    left: 55px;
 }
 
-#planta-media {
-
+#puerta #cerradura {
+    width: 4px;
+    height: 2px;
+    background-color: black;
+    top: 80px;
+    left: 67px;
 }
 
-#ventana-planta-media {
+
+/* PLANTA MEDIA */
+
+#planta-media #ventana-planta-media {
     width: 180px;
     height: 100px;
-    top: 40px;
+    top: 30px;
     left: 60px;
 }
 
-#rollo-cortina {
+#ventana-planta-media #rollo-cortina {
     width: 100%;
     height: 50%;
     top: 0;
@@ -172,29 +255,28 @@ body {
     transition: 0.25s height ease;
 }
 
-#rollo-cortina:hover {
+#ventana-planta-media #rollo-cortina:hover {
     height: 100%;
 }
 
+/* PLANTA ALTA */
 
-#planta-alta {
-
-}
-
-#ventana-planta-alta {
+#planta-alta #ventana-planta-alta {
     width: 160px;
     height: 90px;
-    top: 50px;
+    top: 30px;
     left: 70px;
 }
 
-#ventana-planta-alta .hoja {
+#planta-alta #ventana-planta-alta .hoja {
     background-image: url(flowers.jpg);
     background-size: 70px 70px;
 }
 
+/* BASE DE LA CASA */
+
 #piso {
-    width: 340px;
+    width: 320px;
     height: 20px;
     background-color: dimgrey;
 }

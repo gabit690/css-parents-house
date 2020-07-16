@@ -24,8 +24,8 @@ ___
 
 **Profesión:** Developer y eterno estudiante.
 
-**Inicio del proyecto:** 02/07/2020.
+**Inicio del proyecto:** 09/07/2020.
 
-**Finalización del proyecto:** ??/07/2020.
+**Finalización del proyecto:** 16/07/2020.
 
 [web]: https://dibujo-parents-house.web.app
